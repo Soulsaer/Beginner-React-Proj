@@ -1,3 +1,4 @@
-function greeting() {
-    return <h1>This is sample text</h1>
-}
+const div  = "<h1>this is text</h1>"
+div 
+
+return div;
