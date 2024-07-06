@@ -1,42 +1,98 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+    background: var(--color-bg)
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+    color : unset;
+    text-decoration : none;
+    
+}
+
+.gradient__bg              
+{
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 27%, rgba(4, 4, 48, 1) 0%, rgba(5, 14, 15, 1) 100%, rgba(238, 130, 238, 1) 100%);
+}
+
+.gradient_tex{
+    background:var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_padding{
+    padding: 4rem 6rem;
+}
+
+.section_margin{
+    margin: 4rem 6rem;
+}
+
+.scale-down-center {
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
   }
-  to {
-    transform: rotate(360deg);
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  @media screen and (max-width: 700px){
+    .section_padding{
+        padding: 4rem ;
+    }
+    .section_margin{
+        padding: 4rem ;
+    }
   }
-}
+  @media screen and (max-width: 550px){
+    .section_padding{
+        padding: 4rem , 2rem;
+    }
+    .section_margin{
+        padding: 4rem,2rem ;
+    }
+  }
 
-.card {
-  padding: 2em;
-}
+  @media screen and (max-width: 700px){
+    .section_padding{
+      padding: 4rem;
+    }
+    .section_margin{
+      margin: 4rem;
+    }
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  @media screen and (max-width: 550px){
+    .section_padding{
+      padding: 4rem 2rem;
+    }
+    .section_margin{
+      margin: 4rem 2rem;
+    }
+  }
